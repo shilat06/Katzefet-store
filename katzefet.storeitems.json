@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "66fadaa661f5ee8a20c12edf"
+  },
+  "makat": "2",
+  "name": "שוקולד שוויצרי ",
+  "cost": "5",
+  "img": "../images/iceCream/chocolate.png",
+  "stockAmount": 3,
+  "category": "iceCream"
+},
+{
+  "_id": {
+    "$oid": "66fadaa661f5ee8a20c12ee0"
+  },
+  "makat": "3",
+  "name": "שוקולד מריר",
+  "cost": "25",
+  "img": "\n../images/iceCream/dark.png",
+  "stockAmount": 0,
+  "category": "iceCream"
+},
+{
+  "_id": {
+    "$oid": "66fadaa661f5ee8a20c12ee1"
+  },
+  "makat": "4",
+  "name": "אספרסו",
+  "cost": "23",
+  "img": "../../images/iceCream/espresso.png",
+  "stockAmount": 0,
+  "category": "iceCream"
+},
+{
+  "_id": {
+    "$oid": "66fadaa661f5ee8a20c12ee2"
+  },
+  "makat": "5",
+  "name": "קינדר בואנו",
+  "cost": "22",
+  "img": "../images/iceCream/kinder.png",
+  "stockAmount": 5,
+  "category": "iceCream"
+},
+{
+  "_id": {
+    "$oid": "66fadaa661f5ee8a20c12ee3"
+  },
+  "makat": "6",
+  "name": "פיסטוק",
+  "cost": "42",
+  "img": "../images/iceCream/fistok.png",
+  "stockAmount": 5,
+  "category": "iceCream"
+}]

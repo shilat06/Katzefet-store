@@ -1,0 +1,35 @@
+.title_branch_box {
+  display: flex;
+  justify-content: center;
+}
+
+.contained {
+  width: 25%;
+  min-width: 300px;
+  margin: 10px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttonWaze {
+  margin: 1%;
+  width: 50%;
+  height: 7vh;
+  font-family: rubik light;
+  font-size: 20px;
+  background-color: #e41743;
+  border: 0px;
+  border-radius: 28px;
+}
+.buttonWaze:hover {
+  width: 53%;
+  height: 7.4vh;
+  text-decoration: none;
+}
+.buttonWaze a {
+  color: white;
+  text-decoration: none;
+}

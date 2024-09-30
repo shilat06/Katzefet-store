@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8" />
+
+  <head>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/successModal.css" />
+    <title>גלידריית קצפת | לונה פארק של טעמים - צור קשר</title>
+    <link rel="shortcut icon" href="../images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="userDetails" style="padding: 2%">
+        <span id="userHeader"></span>
+      </div>
+    </header>
+    <nav>
+      <div id="menu">
+        <a href="branches.html">סניפים</a>
+        <a href="our-flavours.html">הטעמים של קצפת</a>
+        <div>
+          <a href="../home-page.html"
+            ><img src="../images/logo.png" alt="הלוגו שלנו:)"
+          /></a>
+        </div>
+        <a href="events.html">אירועים</a>
+        <a href="contact.html">צור קשר</a>
+      </div>
+    </nav>
+    <main>
+      <form>
+        <div class="inputs">
+          <h5 style="direction: rtl; color: brown; text-align: right">
+            סה"כ לתשלום:
+          </h5>
+          <span id="totalPayment"></span>
+          <div class="form__group field">
+            <input
+              type="number"
+              class="form__field"
+              placeholder="מספר כרטיס"
+              name="cardNumber"
+              id="name"
+              required="שדה חובה"
+              size="4"
+            />
+          </div>
+          <br />
+          <div class="form__group field">
+            <input
+              type="month"
+              class="form__field"
+              placeholder="תוקף"
+              name="cardValidity"
+              id="cardValidity"
+              required
+            />
+          </div>
+          <br />
+          <div class="form__group field">
+            <input
+              type="number"
+              class="form__field"
+              placeholder="CVV"
+              name="cvv"
+              id="cvv"
+              min="100"
+              max="999"
+              required="שדה חובה"
+            />
+          </div>
+          <br />
+          <div class="form__group field">
+            <input
+              type="number"
+              class="form__field"
+              placeholder="ת.ז. בעל הכרטיס"
+              name="ownerId"
+              id="ownerId"
+              minlength="9"
+              maxlength="9"
+              required
+            />
+          </div>
+          <br />
+          <button type="submit" class="button" id="submitBtn">לתשלום</button>
+        </div>
+      </form>
+      <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-confirm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="icon-box">
+                <i class="material-icons">&#xE876;</i>
+              </div>
+              <h4 class="modal-title w-100">מעולה!</h4>
+            </div>
+            <div class="modal-body">
+              <p class="text-center">ההזמנה כבר בדרך אליך:)</p>
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-success btn-block" data-dismiss="modal">
+                סגור
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="branches.html">לרשימת סניפי הרשת לחץ כאן</a><br />
+      <img class="longimg" src="../images/ice-cream.png" />
+    </main>
+    <footer>
+      <div id="footer-flex">
+        <img id="footerLogo" src="../images/logo.png" />
+        <div id="footer-icons">
+          <a href="../home-page.html" title="לדף הבית"
+            ><img class="icon" src="../images/homeIcon.png"
+          /></a>
+          <a href="tel:026253722" title="צור קשר בטלפון"
+            ><img id="home" class="icon" src="../images/phoneIcon.png"
+          /></a>
+          <a href="mailto:katzefet@gmail.com" title="שלח לנו מייל"
+            ><img id="mail" class="icon" src="../images/mailIcon.png"
+          /></a>
+          <a
+            href="https://www.instagram.com/katsefet_gelateria/"
+            title="לעמוד האינסטגרם שלנו"
+            ><img id="insta" class="icon" src="../images/instIcon.png"
+          /></a>
+          <a
+            href="https://www.facebook.com/Katzefet.Ice.Cream"
+            title="לעמוד הפייסבוק שלנו"
+            ><img id="face" class="icon" src="../images/faceIcon.png"
+          /></a>
+        </div>
+      </div>
+      <img src="../images/small-sliftizk.jpg" />
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+      integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/payment.js"></script>
+    <script src="../js/shoppingCart.js"></script>
+    <script src="../js/products.js"></script>
+  </body>
+</html>

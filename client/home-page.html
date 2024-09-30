@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>גלידריית קצפת | לונה פארק של טעמים - עמוד הבית</title>
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div id="userDetails" style="padding: 2%">
+            <span id="userHeader" style="color: white; margin: 5px"></span>
+            <button type="button" class="btn btn-primary" id="loginBtn" data-toggle="modal" data-target="#exampleModal">התחבר</button>
+            <button type="button" class="btn btn-primary" id="logoutBtn" style="display: none;">התנתק</button>
+        </div>
+    </header>
+    <nav>
+        <div class="main_menu_div">
+            <div id="menu" class="main_menu">
+                <a href="pages/branches.html">סניפים</a>
+                <a href="pages/our-flavours.html">הטעמים של קצפת</a>
+                <div><a href="home-page.html"><img src="images/logo.png" alt="הלוגו שלנו:)"></a></div>
+                <a href="pages/events.html">אירועים</a>
+                <a href="pages/contact.html">צור קשר</a>
+
+            </div>
+            <div id="video">
+                 <video autoplay muted loop>
+                <p>Your browser does not support showing videos</p>
+                <source src="images/video.mp4" type="video/mp4"> 
+            </video>
+        </div>        
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="main">
+                <h2><b>קצת עלינו</b></h2>
+                <p id="first_p">בגלידריית “קצפת” תמצאו לונה פארק של טעמים והנאה מתוקה לחך שלא ניתן לתאר במילים.<br> אצלנו תוכלו למצוא מבחר
+                    גדול של גלידות שמנת, פרוזן יוגורט ויוגורטים ייחודיים, סורבה גורמה, גלידות פרווה וגלידות ללא סוכר.<br>                    אנו מתמחים בהכנת גלידות יוגורט במבחר טעמים וסוגים מיוחדים. בנוסף, תוכלו להנות משייקים ואייסים מפנקים
+                    העשויים מחומרי גלם איכותיים ובמבחר טעמים .</p>
+                <a href="pages/our-story.html"><button class="buttonBigger brown"><span id="span">קראו עוד עלינו </span></button></a>
+            </div>
+            <div class="main top_border">
+                <div class="box right"><img src="images/p1.png" width="200"></div>
+                <div class="second_left">
+                    <h2><b>קצפת עד הבית!</b></h2>
+                    <p>המארזים המפנקים שלנו עם מגוון תוספות, גביעים ופינוקים בדרך אליכם.</p>
+                    <a href="pages/branches.html"><button class="buttonBigger brown"><span id="span">לסניפים שמבצעים משלוח </span></button></a>
+                </div>
+
+            </div>
+            <div class="main ">
+                <div class="box left"><img src="images/p2.png" width="200"></div>
+                <div class="second_right">
+                    <h2><b>אירועים בקצפת!</b></h2>
+                    <p>רוצים להפוך את האירוע שלכם לבלתי נשכח? רוצים להביא לאורחים שלכם את הדובדבן שבקצפת?<br> אירועים עסקיים
+                        / פרטיים המלווים בחוויה יוצאת דופן עם מגוון טעמי גלידה מפנקים, עגלות אירועים מיוחדות, וופל בלגי,
+                        קרפ צרפתי ושלל הפתעות מתוקות ייחודיות.</p>
+                    <a href="pages/events.html"><button class="buttonBigger pink"><span id="span">לפרטים נוספים והצעת מחיר</span></button></a>
+                </div>
+            </div>
+            <div id="third">
+                <p><b>רוצים להוסיף קצת קצפת ליום שלכם?</b></p>
+                <a href="pages/branches.html"><button class="buttonBigger pink"><span id="span">לסניפים שלנו </span></button></a>
+            </div>
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">התחברות</h5>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" name="username" class="form-control" id="usernameInput" placeholder="הזן שם משתמש">
+                                    <input type="password" name="password" class="form-control" id="passwordInput" placeholder="הזן סיסמה">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary" id="submitBtn">התחברות</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+        <div id="footer-flex">
+            <img id="footerLogo" src="images/logo.png">
+            <div id="footer-icons">
+                <a href="home-page.html" title="לדף הבית"><img class="icon" src="images/homeIcon.png"></a>
+                <a href="tel:026253722" title="צור קשר בטלפון"><img id="home" class="icon" src="images/phoneIcon.png"></a>
+                <a href="mailto:katzefet@gmail.com" title="שלח לנו מייל"><img id="mail" class="icon" src="images/mailIcon.png"></a>
+                <a href="https://www.instagram.com/katsefet_gelateria/" title="לעמוד האינסטגרם שלנו"><img id="insta" class="icon" src="images/instIcon.png"></a>
+                <a href="https://www.facebook.com/Katzefet.Ice.Cream" title="לעמוד הפייסבוק שלנו"><img id="face" class="icon" src="images/faceIcon.png"></a>
+            </div>
+        </div>
+        <img src="images/small-sliftizk.jpg">
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js" integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
